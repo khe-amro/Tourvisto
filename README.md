@@ -1,87 +1,65 @@
-# Welcome to React Router!
+# Tourvisto 🌍✈️
 
-A modern, production-ready template for building full-stack React applications using React Router.
+Tourvisto is an AI-powered travel itinerary generator and planning application that builds personalized trips in seconds. From choosing your destination to planning daily activities based on your budget, travel style, and interests—Tourvisto streamlines the entire travel planning process.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+## 🚀 Features
 
-## Features
+- **AI-Powered Itineraries:** Generate comprehensive, multi-day travel plans customized by budget, interests, and group type using Google's Gemini AI.
+- **Beautiful UI/UX:** Built with a modern, responsive design and premium Syncfusion UI components.
+- **Admin Dashboard:** A robust dashboard for administrators to track user growth, monitor generated trips, and analyze travel trends (with interactive charts and data grids).
+- **Secure Authentication:** User management and authentication powered by Appwrite.
+- **Monetization Ready:** Seamless integration with Stripe for premium trip generation or payment links.
+- **Error Tracking:** Fully integrated with Sentry for real-time error monitoring and performance profiling.
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+## 💻 Tech Stack
 
-## Getting Started
+- **Framework:** [React 19](https://react.dev/) & [React Router v8](https://reactrouter.com/) (powered by Vite)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **UI Components:** [Syncfusion EJ2 React Components](https://www.syncfusion.com/react-components)
+- **Backend & Auth:** [Appwrite](https://appwrite.io/) (Node & Web SDKs)
+- **AI Integration:** [Google Generative AI (Gemini Flash)](https://ai.google.dev/)
+- **Payments:** [Stripe](https://stripe.com/)
+- **Monitoring:** [Sentry](https://sentry.io/)
+
+## 🛠️ Getting Started
+
+### Prerequisites
+
+- Node.js (v18+)
+- Appwrite Project
+- Google Gemini API Key
+- Stripe Account
+- Sentry Account (Optional)
 
 ### Installation
 
-Install the dependencies:
-
+1. Clone the repository and install dependencies:
 ```bash
 npm install
 ```
 
-### Development
+2. Configure environment variables in `.env.local`:
+```env
+VITE_APPWRITE_ENDPOINT="your_appwrite_endpoint"
+VITE_APPWRITE_PROJECT_ID="your_project_id"
+VITE_APPWRITE_DATABASE_KEY="your_database_id"
+VITE_APPWRITE_USERS_COLLECTION="your_users_collection_id"
+VITE_APPWRITE_TRIP_COLLECTION="your_trip_collection_id"
+VITE_APPWRITE_API_KEY="your_appwrite_api_key"
 
-Start the development server with HMR:
+GEMINI_API_KEY="your_gemini_api_key"
+UNSPLASH_ACCESS_KEY="your_unsplash_access_key"
 
+STRIPE_SECRET_KEY="your_stripe_secret_key"
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
+## 📸 Screenshots
 
-## Building for Production
+![Screenshot 1](./public/assets/images/screenshot1.png)
 
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+![Screenshot 2](./public/assets/images/screenshot2.png)

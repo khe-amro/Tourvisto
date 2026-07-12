@@ -49,7 +49,7 @@ declare interface DayPlan {
   activities: Activity[];
 }
 
-declare interface Location {
+declare interface TripLocation {
   city: string;
   coordinates: [number, number];
   openStreetMap: string;
@@ -70,7 +70,7 @@ declare interface Trip {
   itinerary: DayPlan[];
   bestTimeToVisit: string[];
   weatherInfo: string[];
-  location: Location;
+  location: TripLocation;
   payment_link: string;
 }
 

@@ -16,5 +16,17 @@ const account = new Account(client);
 const database = new Databases(client);
 const storage = new Storage(client);
 
+export const createAppwriteClient = (cookie?: string) => {
+    const runtimeClient = new Client()
+        .setEndpoint(appwriteconfig.endpointUrl)
+        .setProject(appwriteconfig.projectId);
+
+    if (cookie) {
+        runtimeClient.setCookie(cookie);
+    }
+
+    return runtimeClient;
+};
+
 export {account, database, storage, client};
 

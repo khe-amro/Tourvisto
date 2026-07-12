@@ -45,7 +45,7 @@ export const storeUserData = async () => {
     }
 };
 
-export const getGooglePicture = async (accessToken: string) => {
+const getGooglePicture = async (accessToken: string) => {
     try {
         const response = await fetch(
             "https://people.googleapis.com/v1/people/me?personFields=photos",
@@ -97,8 +97,6 @@ export const getUser = async () => {
 
         return documents.length > 0 ? documents[0] : redirect("/sign-in");
     } catch (error) {
-        console.error("Error fetching user:", error);
         return null;
     }
-};
-
+};
