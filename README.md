@@ -60,6 +60,6 @@ npm run dev
 
 ## 📸 Screenshots
 
-![Screenshot 1](./public/assets/images/screenshot1.png)
+![Screenshot 1](./public/assets/images/readme.png)
 
-![Screenshot 2](./public/assets/images/screenshot2.png)
+
