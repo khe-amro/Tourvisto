@@ -1,6 +1,4 @@
 # Tourvisto 🌍✈️
-![Screenshot 1](./public/assets/images/Screenshot 2026-07-12 214008.png)
-Tourvisto is an AI-powered travel itinerary generator and planning application that builds personalized trips in seconds. From choosing your destination to planning daily activities based on your budget, travel style, and interests—Tourvisto streamlines the entire travel planning process.
 
 ## 🚀 Features
 
