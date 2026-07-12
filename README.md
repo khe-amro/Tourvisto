@@ -1,5 +1,8 @@
 # Tourvisto 🌍✈️
 
+![Screenshot 1](./public/assets/images/readme.png)
+
+
 ## 🚀 Features
 
 - **AI-Powered Itineraries:** Generate comprehensive, multi-day travel plans customized by budget, interests, and group type using Google's Gemini AI.
@@ -56,8 +59,6 @@ STRIPE_SECRET_KEY="your_stripe_secret_key"
 npm run dev
 ```
 
-## 📸 Screenshots
 
-![Screenshot 1](./public/assets/images/readme.png)
 
 
