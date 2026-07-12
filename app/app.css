@@ -10,11 +10,18 @@
 @import "@syncfusion/ej2-react-dropdowns/styles/material.css";
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Twemoji Country Flags";
+  unicode-range: U+1F1E6-1F1FF, U+1F3F4, U+E0061-E007A, U+E007F;
+  src: url('https://cdn.jsdelivr.net/npm/country-flag-emoji-polyfill@0.1.3/dist/TwemojiCountryFlags.woff2') format('woff2');
+  font-display: swap;
+}
+
 @theme {
-  --font-figtree: "Figtree", sans-serif;
-  --font-inter: "Inter", sans-serif;
-  --font-playfair: "Playfair Display", serif;
-  --font-orbitron: "Orbitron", sans-serif;
+  --font-figtree: "Figtree", "Twemoji Country Flags", sans-serif;
+  --font-inter: "Inter", "Twemoji Country Flags", sans-serif;
+  --font-playfair: "Playfair Display", "Twemoji Country Flags", serif;
+  --font-orbitron: "Orbitron", "Twemoji Country Flags", sans-serif;
   --color-dark-100: #1f1f36;
   --color-dark-200: #141627;
   --color-dark-300: #101828;
@@ -89,7 +96,7 @@
   }
 
   .sign-in-card {
-    @apply flex bg-white flex-col border border-light-100 md:max-w-[510px] rounded-[20px] py-10 px-6 w-full;
+    @apply flex bg-white flex-col border border-light-100 md:max-w-[510px] rounded-20 py-10 px-6 w-full;
     header {
       @apply flex items-center gap-1.5 justify-center;
     }
@@ -213,7 +220,7 @@
         ul {
           @apply flex flex-col gap-3;
           li {
-            @apply flex justify-between gap-7 text-sm md:text-lg font-normal text-dark-400 !list-disc;
+            @apply flex justify-between gap-7 text-sm md:text-lg font-normal text-dark-400 list-disc!;
           }
         }
       }
@@ -233,7 +240,7 @@
           @apply flex flex-col sm:gap-3 gap-7;
 
           li {
-            @apply flex max-sm:flex-col flex-row justify-between sm:gap-7 gap-3 text-sm md:text-lg font-normal text-dark-400 !list-disc;
+            @apply flex max-sm:flex-col flex-row justify-between sm:gap-7 gap-3 text-sm md:text-lg font-normal text-dark-400 list-disc!;
 
             span {
               @apply w-[90px];
@@ -263,7 +270,7 @@
     }
   }
   .trip-card {
-    @apply shadow-300 bg-white rounded-[20px] flex-col w-full relative;
+    @apply shadow-300 bg-white rounded-20 flex-col w-full relative;
     img {
       @apply w-full h-[160px] rounded-t-xl object-cover aspect-video;
     }
@@ -442,10 +449,10 @@
     @apply text-sm md:text-base font-semibold;
   }
   .button-class {
-    @apply !bg-primary-100 !px-4 !rounded-lg !flex !items-center !justify-center !gap-1.5 !shadow-none;
+    @apply bg-primary-100! px-4! rounded-lg! flex! items-center! justify-center! gap-1.5! shadow-none!;
   }
   .button-class-secondary {
-    @apply !bg-white !px-4 !rounded-lg !flex !items-center !justify-center !gap-1.5 !shadow-sm;
+    @apply bg-white! px-4! rounded-lg! flex! items-center! justify-center! gap-1.5! shadow-sm!;
   }
   .form-label {
     @apply text-sm font-normal text-gray-100;
@@ -457,10 +464,10 @@
     @apply absolute z-10 top-24 bg-white border border-gray-200 rounded-xl shadow-200 h-[250px] w-full md:max-w-[660px] overflow-hidden;
   }
   .tripCard-pill {
-    @apply bg-white py-1 px-2.5 w-fit rounded-[20px] absolute top-2.5 right-4 text-dark-100 text-sm font-semibold;
+    @apply bg-white py-1 px-2.5 w-fit rounded-20 absolute top-2.5 right-4 text-dark-100 text-sm font-semibold;
   }
   .price-pill {
-    @apply bg-white py-0.5 px-2.5 w-fit rounded-[20px] top-2.5 right-4 text-dark-100 text-sm font-semibold;
+    @apply bg-white py-0.5 px-2.5 w-fit rounded-20 top-2.5 right-4 text-dark-100 text-sm font-semibold;
   }
   .trip-grid {
     @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-7;
@@ -469,13 +476,13 @@
     @apply flex font-orbitron items-center text-xs md:text-lg font-normal cursor-pointer gap-2.5 py-[18px] px-3.5 rounded-lg text-dark-200 hover:bg-primary-100 hover:text-white;
   }
   .combo-box {
-    @apply !p-3.5 !border w-full !border-light-400 !rounded-xl !text-base !text-dark-300 !font-normal;
+    @apply p-3.5! border! w-full! border-light-400! rounded-xl! text-base! text-dark-300! font-normal!;
   }
 }
 
 html,
 body {
-  font-family: "Playfair", serif;
+  font-family: "Playfair", "Twemoji Country Flags", serif;
   background-color: #f9fbfc;
   scroll-behavior: smooth;
 }
@@ -545,4 +552,15 @@ body {
   position: absolute;
   top: 45px;
   right: 40px;
+}
+
+/* Ensure Syncfusion inputs, combobox values, and list items fallback to Twemoji Country Flags font */
+.e-control,
+.e-dropdown-popup,
+.e-input-group,
+.e-input-group input,
+.e-combobox,
+.e-list-item,
+.combo-box {
+  font-family: "Inter", "Twemoji Country Flags", sans-serif !important;
 }
