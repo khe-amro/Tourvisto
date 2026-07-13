@@ -1,12 +1,12 @@
 # Tourvisto 🌍
 ## Cover Page
-![Screenshot 1](./public/assets/images/readme.png)
+![Screenshot ](./public/assets/images/readme.png)
 
 ## Dashboard
 
 ![Screenshot 1](./public/assets/images/Screenshot1.png)
 
-## Home pge
+## Home page
 [Screenshot 2](./public/assets/images/Screenshot2.png)
 
 - **AI-Powered Itineraries:** Generate comprehensive, multi-day travel plans customized by budget, interests, and group type using Google's Gemini AI.
