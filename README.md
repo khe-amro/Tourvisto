@@ -1,13 +1,4 @@
 # Tourvisto 🌍
-## Cover Page
-![Screenshot ](./public/assets/images/readme.png)
-
-## Dashboard
-
-![Screenshot 1](./public/assets/images/Screenshot1.png)
-
-## Home page
-![Screenshot 2](./public/assets/images/Screenshot2.png)
 
 - **AI-Powered Itineraries:** Generate comprehensive, multi-day travel plans customized by budget, interests, and group type using Google's Gemini AI.
 - **Beautiful UI/UX:** Built with a modern, responsive design and premium Syncfusion UI components.
@@ -15,6 +6,16 @@
 - **Secure Authentication:** User management and authentication powered by Appwrite.
 - **Monetization Ready:** Seamless integration with Stripe for premium trip generation or payment links.
 - **Error Tracking:** Fully integrated with Sentry for real-time error monitoring and performance profiling.
+
+## Cover Page
+![Screenshot ](./public/assets/images/readme.png)
+
+## Dashboard
+![Screenshot 1](./public/assets/images/Screenshot1.png)
+
+## Home page
+![Screenshot 2](./public/assets/images/Screenshot2.png)
+
 
 ##  Tech Stack
 
