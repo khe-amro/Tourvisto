@@ -1,9 +1,13 @@
-# Tourvisto 🌍✈️
-
+# Tourvisto 🌍
+## Cover Page
 ![Screenshot 1](./public/assets/images/readme.png)
+
+## Dashboard
+
 ![Screenshot 1](./public/assets/images/Screenshot1.png)
 
-## 🚀 Features
+## Home pge
+[Screenshot 1](./public/assets/images/Screenshot2.png)
 
 - **AI-Powered Itineraries:** Generate comprehensive, multi-day travel plans customized by budget, interests, and group type using Google's Gemini AI.
 - **Beautiful UI/UX:** Built with a modern, responsive design and premium Syncfusion UI components.
@@ -12,7 +16,7 @@
 - **Monetization Ready:** Seamless integration with Stripe for premium trip generation or payment links.
 - **Error Tracking:** Fully integrated with Sentry for real-time error monitoring and performance profiling.
 
-## 💻 Tech Stack
+##  Tech Stack
 
 - **Framework:** [React 19](https://react.dev/) & [React Router v8](https://reactrouter.com/) (powered by Vite)
 - **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
@@ -22,7 +26,7 @@
 - **Payments:** [Stripe](https://stripe.com/)
 - **Monitoring:** [Sentry](https://sentry.io/)
 
-## 🛠️ Getting Started
+##  Getting Started
 
 ### Prerequisites
 
