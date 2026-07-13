@@ -7,7 +7,7 @@
 ![Screenshot 1](./public/assets/images/Screenshot1.png)
 
 ## Home page
-[Screenshot 2](./public/assets/images/Screenshot2.png)
+![Screenshot 2](./public/assets/images/Screenshot2.png)
 
 - **AI-Powered Itineraries:** Generate comprehensive, multi-day travel plans customized by budget, interests, and group type using Google's Gemini AI.
 - **Beautiful UI/UX:** Built with a modern, responsive design and premium Syncfusion UI components.
