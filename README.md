@@ -1,7 +1,7 @@
 # Tourvisto 🌍✈️
 
 ![Screenshot 1](./public/assets/images/readme.png)
-
+![Screenshot 1](./public/assets/images/Screenshot1.png)
 
 ## 🚀 Features
 
